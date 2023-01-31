@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Sign-up Form</title>
+</head>
+
+<body>
+    <header class="form-header">
+        <h1>Winter Camping</h1>
+        <p>This is not a real online service! You know you need something like this in your
+            life to help you relax and forget about responsibilities for a moment. Sign up
+            <em>now</em> to get started.
+        </p>
+        <p>
+            You <em>know</em> you want to.
+        </p>
+
+        <form action="#" method="get" class="camping-form">
+            <div class="all-forms">
+                <h2>Let's do this!</h2>
+                <div class="form-row">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" name="first-name" type="text">
+                </div>
+                <div class="form-row">
+                    <label for="last-name">Last name</label>
+                    <input id="last-name" name="last-name" type="text">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="tom@email.com">
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" name="phone" type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        title="Please use format: xxx-xxx-xxxx" placeholder="xxx-xxx-xxxx">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Enter password">
+                </div>
+                <div class="form-row">
+                    <label for="conform-password">Confirm Password</label>
+                    <input id="conform-password" name="password" type="password" placeholder="Please confirm password">
+                </div>
+                <div class="form-row">
+                    <div class='form-row'>
+                        <label class='checkbox-label' for='available'>
+                            <input id='available' name='available' type='checkbox' value='is-available' />
+                            <span>Sign-up for our camping newsletter!</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="create-account">
+                <div>
+                    <button>Create Account</button>
+                </div>
+                <div>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+
+        </form>
+    </header>
+
+</body>
+
+</html>
