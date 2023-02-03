@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
+@font-face {
+  font-family: norse-bold;
+  src: url(/font/Norse-Bold.otf);
+}
 /* Reset for font and text. 
 Inherit property value causes the property value to match 
 the computed value of the property of its parent element; 
@@ -24,11 +26,33 @@ button {
 }
 
 body {
-    background-color: #f9fafb;
-    font-family: 'open sans', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* moves to center of screen */
-    min-height: 100vh; /*view port height: think of it as 100 horizontal slices and doing this will make our page take up all 100 slices */
-    margin: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.all-content {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-side {
+ background-image: url(./imgs/camping.jpg);
+ width: 35vw;
+ background-repeat: no-repeat;
+ background-size: cover; /* Correctly displays the full image */
+}
+
+.logo {
+  background-image: url(/imgs/odinlogo.png);
+  background-size: cover;
+  width: 150px;
+  height: 200px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
