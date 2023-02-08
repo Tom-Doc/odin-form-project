@@ -2,6 +2,7 @@
   font-family: norse-bold;
   src: url(/font/Norse-Bold.otf);
 }
+
 /* Reset for font and text. 
 Inherit property value causes the property value to match 
 the computed value of the property of its parent element; 
@@ -25,7 +26,15 @@ button {
   box-sizing: border-box;
 }
 
+/* Removes defualt system level styles */
+/* input {
+  appearance: none;
+} */
+
 body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
   margin: 0;
   padding: 0;
 }
@@ -38,11 +47,12 @@ body {
 }
 
 .left-side {
- background-image: url(./imgs/camping.jpg);
- width: 45vw;
- background-repeat: no-repeat;
- background-size: cover; /* Correctly displays the full image */
- position: relative;
+  background-image: url(./imgs/camping.jpg);
+  width: 45vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Correctly displays the full image */
+  position: relative;
 }
 
 .right-side {
@@ -75,6 +85,9 @@ body {
 }
 
 .top {
+  text-align: left;
+  background-color: #F6F7F8;
+  border-radius: 1px;
   width: 100%;
   height: 100vh;
   padding-left: 2rem;
@@ -82,13 +95,90 @@ body {
 }
 
 .middle {
-  width: 100%;
+  text-align: left;
+  background-color: hsl(210, 23%, 95%);
+  border-radius: 1px;
+  width: auto;
   height: 100vh;
   padding-left: 2rem;
 }
 
 .bottom {
+  text-align: left;
+  background-color: #F6F7F8;
+  border-radius: 1px;
+  padding-top: 2rem;
   width: 100%;
   height: 100vh;
   padding-left: 2rem;
+}
+
+/* Allows for the inputs to be split in 2 columns */
+.form-row {
+  float: left;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='password'],
+.form-row input[type='confirm-password'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+
+  .form-row,
+  .logo-text {
+    flex-direction: row;
+    align-items: flex-start;
+    /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row input[type='password'],
+  .form-row input[type='confirm-password'] {
+    width: 250px;
+    height: initial;
+  }
+
+  .form-row label {
+    text-align: right;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+  .logo-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-row .checkbox-label {
+    margin-left: 0px;
+
+  }
 }
