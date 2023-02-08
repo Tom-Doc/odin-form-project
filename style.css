@@ -39,20 +39,56 @@ body {
 
 .left-side {
  background-image: url(./imgs/camping.jpg);
- width: 35vw;
+ width: 45vw;
  background-repeat: no-repeat;
  background-size: cover; /* Correctly displays the full image */
-}
-
-.logo {
-  background-image: url(/imgs/odinlogo.png);
-  background-size: cover;
-  width: 150px;
-  height: 200px;
+ position: relative;
 }
 
 .right-side {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+}
+
+.logo-container {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.transparent-logo-bg {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3)
+}
+
+.logo-text {
+  font-family: norse-bold;
+  color: white;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.top {
+  width: 100%;
+  height: 100vh;
+  padding-left: 2rem;
+  padding-top: 10rem;
+}
+
+.middle {
+  width: 100%;
+  height: 100vh;
+  padding-left: 2rem;
+}
+
+.bottom {
+  width: 100%;
+  height: 100vh;
+  padding-left: 2rem;
 }
