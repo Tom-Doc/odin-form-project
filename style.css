@@ -89,7 +89,7 @@ body {
   background-color: #F6F7F8;
   border-radius: 1px;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   padding-left: 2rem;
   padding-top: 10rem;
 }
@@ -124,7 +124,7 @@ body {
 .form-row input[type='email'],
 .form-row input[type='password'],
 .form-row input[type='confirm-password'] {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
   padding: 7px;
@@ -152,7 +152,9 @@ body {
 
   .form-row,
   .logo-text {
-    flex-direction: row;
+    /* All 3 below allow inputs and named to be stacked */
+     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     /* To avoid stretching */
     margin-bottom: 20px;
@@ -165,6 +167,10 @@ body {
     width: 250px;
     height: initial;
   }
+
+  /* .form-row input[type='text']:focus {
+    border: 2px solid blue;
+  } */
 
   .form-row label {
     text-align: right;
@@ -181,4 +187,4 @@ body {
     margin-left: 0px;
 
   }
-}
+} 
