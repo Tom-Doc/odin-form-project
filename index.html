@@ -18,6 +18,7 @@
                     <h1 class="logo-text">ODIN CAMPGROUNDS</h1>
                 </div>
             </div>
+            <footer id="footer">Photo by: <a href="https://unsplash.com/photos/E5p9lxiYHDY">Eddie Lawhead</a> on <a href="https://unsplash.com/">unsplash.com</a></footer>
         </div>
 
         <div class="right-side">
@@ -35,33 +36,33 @@
 
             <div class="middle">
 
-                <form action="#" method="get" class="camping-form">
+                <form>
                     <div class="all-forms">
-                        <h2>Let's do this!</h2>
+                        <h2>Create a campgrounds account!</h2>
                         <div class="form-row">
-                            <label for="first-name">First Name</label>
-                            <input id="first-name" name="first-name" type="text">
+                            <label for="first-name">FIRST NAME</label>
+                            <input id="first-name" name="first-name" type="text" minlength="1">
                         </div>
                         <div class="form-row">
-                            <label for="last-name">Last name</label>
-                            <input id="last-name" name="last-name" type="text">
+                            <label for="last-name">LAST NAME</label>
+                            <input id="last-name" name="last-name" type="text" minlength="3">
                         </div>
                         <div class="form-row">
-                            <label for="email">Email</label>
-                            <input id="email" name="email" type="email" placeholder="tom@email.com">
+                            <label for="email">EMAIL</label>
+                            <input id="email" name="email" type="email" placeholder="name@email.com">
                         </div>
 
                         <div class="form-row">
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">PHONE NUMBER</label>
                             <input id="phone" name="phone" type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                 title="Please use format: xxx-xxx-xxxx" placeholder="xxx-xxx-xxxx">
                         </div>
                         <div class="form-row">
-                            <label for="password">Password</label>
+                            <label for="password">PASSWORD</label>
                             <input id="password" name="password" type="password" placeholder="Enter password">
                         </div>
                         <div class="form-row">
-                            <label for="confirm-password">Confirm Password</label>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
                             <input id="confirm-password" name="password" type="password"
                                 placeholder="Please confirm password">
                         </div>
@@ -74,19 +75,19 @@
                             </div>
                         </div> -->
                     </div>
-                </form>
+                <!-- </form> -->
             </div>
-
-            <div class="bottom">
-                <div class="create-account">
-                    <div>
-                        <button>Create Account</button>
-                    </div>
-                    <div>
-                        <p>Already have an account? <a href="#">Log in</a></p>
+                <div class="bottom">
+                    <div class="create-account">
+                        <div>
+                            <button type="submit" class="create-btn">Create Account</button>
+                        </div>
+                        <div>
+                            <p class="has-account-text">Already have an account? <a href="#">Log in</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
 
         </div>
     </div>
