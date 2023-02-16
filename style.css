@@ -3,6 +3,11 @@
   src: url(/font/Norse-Bold.otf);
 }
 
+:root { 
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
 /* Reset for font and text. 
 Inherit property value causes the property value to match 
 the computed value of the property of its parent element; 
@@ -94,6 +99,7 @@ body {
   height: 100%;
   padding-left: 2rem;
   padding-top: 10rem;
+  padding-bottom: 2rem;
 }
 
 .middle {
@@ -180,12 +186,36 @@ h2 {
   color: #232425;
   position: absolute;
   bottom: 0; 
-  padding: 0px 0px 10px 125px;
+  padding: 0px 0px 10px 150px;
   /* display: flex;
   flex-wrap: wrap; */
-
 }
 
+input:focus {
+  outline-color: #0077f7;
+  /* outline: none !important; */
+  /* border:10px solid; */
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(168, 164, 161, 0.5);
+}
+
+.form-row.success input {
+  border-color: var(--success-color);
+}
+
+
+.form-row.error input {
+  border-color: var(--error-color);
+}
+
+#match-message {
+  font-size: .8rem;
+  /* color: rgb(168, 164, 161, 0.01); */
+}
+
+#no-match-message {
+  font-size: .8rem;
+  /* color: rgb(168, 164, 161, 0.01); */
+}
 
 
 
@@ -200,13 +230,13 @@ h2 {
 @media only screen and (min-width: 600px) {
 
   .form-row,
-  .logo-text,{
+  .logo-text {
     /* All 3 below allow inputs and named to be stacked */
      display: flex;
     flex-direction: column;
     align-items: flex-start;
     /* To avoid stretching */
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
   }
 
   .form-row input[type='text'],
