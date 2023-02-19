@@ -8,10 +8,6 @@
   --error-color: #e74c3c;
 }
 
-/* Reset for font and text. 
-Inherit property value causes the property value to match 
-the computed value of the property of its parent element; 
-inheriting the value of the parent. */
 button,
 input,
 select,
@@ -30,11 +26,6 @@ button {
   margin: 0;
   box-sizing: border-box;
 }
-
-/* Removes defualt system level styles */
-/* input {
-  appearance: none;
-} */
 
 body {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
@@ -162,7 +153,7 @@ body {
 
 .has-account-text {
   font-size: 0.9rem;
-  /* font-weight: bold; */
+  /* font-weig8ht: bold; */
   padding-left: 0.5rem;
 }
 
@@ -187,14 +178,10 @@ h2 {
   position: absolute;
   bottom: 0; 
   padding: 0px 0px 10px 150px;
-  /* display: flex;
-  flex-wrap: wrap; */
 }
 
 input:focus {
   outline-color: #0077f7;
-  /* outline: none !important; */
-  /* border:10px solid; */
   box-shadow: 0.2rem 0.2rem 0.2rem rgba(168, 164, 161, 0.5);
 }
 
@@ -209,21 +196,7 @@ input:focus {
 
 #match-message {
   font-size: .8rem;
-  /* color: rgb(168, 164, 161, 0.01); */
 }
-
-#no-match-message {
-  font-size: .8rem;
-  /* color: rgb(168, 164, 161, 0.01); */
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -246,10 +219,6 @@ input:focus {
     width: 250px;
     height: initial;
   }
-
-  /* .form-row input[type='text']:focus {
-    border: 2px solid blue;
-  } */
 
   .form-row label {
     text-align: right;
