@@ -186,6 +186,10 @@ input:focus {
 }
 
 .form-row.success:empty input {
+  border-color: initial;
+}
+
+.form-row.success: input {
   border-color: var(--success-color);
 }
 
